@@ -1,0 +1,372 @@
+body{
+
+	background-color: #CCCCCC;
+	
+}
+
+
+
+
+h1 {
+
+	font-weight: bold;
+	font-size: 40px;
+	font-family: sans-serif;
+	font-style: normal;
+	line-height: 150%;
+	text-align: center;
+	background: ;
+}
+
+
+.icone-alura{
+
+	position: relative;
+	left: -3%;
+	right: 37.43%;
+	top: 10px;
+	bottom: 0%;
+
+}
+
+
+#input-deposito{
+
+	position: relative;
+	width: 450px;
+	height: 48px;
+	left: 10%;
+	top: 200px;
+	font-family: sans-serif;	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	color: darkblue;
+	border-radius: 24px;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+
+.regra{
+
+text-transform: lowercase;
+
+
+}
+
+#img-section-deposito-master{
+
+	position: absolute;
+	width: 400px;
+	height: 944px;
+	left: 1000px;
+	top: 120px;
+
+}
+
+.instrucao{
+
+
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+
+
+}
+
+.instrucao{
+
+	position: absolute;
+	left: 5%;
+	top: 500px;
+	width: 100%px;
+	height: 18px;
+}
+
+.button-deposito-encriptar{
+	background: darkblue;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	width: 328px;
+	height: 67px
+
+}
+
+
+.button-deposito-encriptar{
+
+	position: relative;
+	left: 40px;
+	top:565px;
+
+
+}
+
+.button-deposito-descriptar{
+
+	position: relative;
+	left: 39px;
+	top: 589px;
+
+
+}
+
+
+.parte-interna-button-encriptar{
+
+	width: 280px;
+	height: 19px;
+
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	font-weight: bold;
+
+}
+
+.parte-interna-button-descriptar{
+
+	width: 280px;
+	height: 19px;
+
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+
+.button-deposito-descriptar{
+	background: #D8DFE8;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	border: 1px solid #0A3871;
+
+
+}
+
+.img-icone{
+
+	position: absolute;
+	left: 58px;
+	right: 0%;
+	top: 962px;
+
+}
+
+
+
+#img-section-codificada{
+
+	position: relative;
+	width: 200px;
+	height: 200px;
+	left: 1080px;
+	top: 450px;
+
+}
+
+.primeiro-paragrafo{
+
+	width: 336px;
+	height: 58px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	text-align: center;
+
+}
+
+.segundo-paragrafo{
+
+	width: 336px;
+	height: 48px;
+	font-family:sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+
+}
+
+.paragrafos-da-img{
+
+	position: absolute;
+	width: 325px;
+	height: 122px;
+	left: 1030px;
+	top: 500px;
+}
+
+
+
+
+
+
+.button-section-codificada{
+
+	background: darkblue;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	width: 328px;
+	height: 67px
+}
+.button-section-codificada{
+
+	
+	position: absolute;
+	
+	left: 400px;
+	top: 774px;
+
+}
+
+.parte-interna-button-copiar{
+
+	width: 280px;
+	height: 19px;
+
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;	
+	color: white ;
+	font-weight: bold;
+
+}
+.button-section-codificada-reiniciar{
+
+	background: #D8DFE8;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	width: 328px;
+	height: 67px
+
+}
+
+.button-section-codificada-reiniciar{
+
+	position: absolute;
+
+	left: 400px;
+	top: 685px;
+
+}
+
+.parte-interna-button-reiniciar{
+
+	color: black;
+	font-family: sans-serif;
+	width: 280px;
+	height: 19px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+
+.img-icone2{
+
+	position: absolute;
+	right: 159px;
+	left: 60px;
+	top: 506px;
+
+
+
+}
+
+
+.mensagem-musica{
+
+	font-family: sans-serif;
+	width: 100%;
+	height: 19px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	position: absolute;
+	right: 159px;
+	left: 80px;
+	top: 955px;
+
+	
+}
+
+
+
+
+
+.musica{
+
+	position: absolute;
+	right: 159px;
+	left: 60px;
+	top: 1100px;
+
+
+
+
+}
+
+.copyright{
+
+	position: relative;
+	right: 159px;
+	left: 60px;
+	top: 850px;
+	text-align: center;
+	
+
+}
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Decodificador de texto</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1><img src="midia/Vector.png" class="icone-alura">*Decodificador de textos personalizados*</h1>
+	</header>
+
+	<main class="deposito">
+        <section class="section-deposito-master">
+            <input class="regra" id="input-deposito" placeholder="Digite seu texto"/>
+            <div class="button-deposito">
+                <img id="img-section-deposito-master" src="midia/Rectangle 1.png">
+                <p class="instrucao" align="justify">Utilizar apenas letras minúsculas sem acento!.</p>
+                <button class="button-deposito-encriptar" type="button" onclick="encrypt()" ><p class="parte-interna-button-encriptar">Encriptar</p></button>
+                <button class="button-deposito-descriptar" type="button" onclick="decrypt()" ><p class="parte-interna-button-descriptar">Desencriptar</p></button>
+                <img class="img-icone"src="midia/Vector (1).png"> 
+               
+            </div>
+        </section>
+
+        <section class="section-codificada">
+            <img id="img-section-codificada" src="midia/buscador.png" alt="Um homem fazendo uma busca utilizando uma lupa.">
+
+            <div class="paragrafos-da-img">
+            	<p class="primeiro-paragrafo">Nenhuma mensagem encontrada</p>
+            	<p class="segundo-paragrafo"><i>Digite um texto que você deseja criptografar ou descriptografar.</i></p>
+            </div>
+
+
+            <button class="button-section-codificada" type="button" onclick="copyToClickBoard()"><p class="parte-interna-button-copiar">Copiar</p></button>
+            <button class="button-section-codificada-reiniciar" type="button"><p class="parte-interna-button-reiniciar">Reiniciar</p></button>
+        </section>
+    </main>
+
+
+    <script type="text/javascript">
+    function encrypt() {
+	 	let text = document.getElementById('input-deposito').value.toLowerCase()
+		let encryptedText = text.replace(/e/igm, "enter")
+    	encryptedText = encryptedText.replace(/o/igm, "ober")
+    	encryptedText = encryptedText.replace(/i/igm, "imes")
+    	encryptedText = encryptedText.replace(/u/igm, "ufat")
+
+
+    document.getElementById("img-section-codificada").style.display = "none"
+    document.querySelector(".segundo-paragrafo").style.display = "none"
+    document.querySelector(".primeiro-paragrafo").innerHTML = encryptedText
+    document.getElementById("button-section-codificada").style.display = "show"
+    document.getElementById("button-section-codificada").style.display = "inherit"
+    document.getElementById("button-section-codificada-reiniciar").style.display = "show"
+    document.getElementById("button-section-codificada-reiniciar").style.display = "inherit"
+}
+	function decrypt() {
+  		let text = document.getElementById('input-deposito').value.toLowerCase()
+		let encryptedText = text.replace(/enter/igm, "e")
+   		encryptedText = encryptedText.replace(/ober/igm, "o")
+    	encryptedText = encryptedText.replace(/imes/igm, "i")
+    	encryptedText = encryptedText.replace(/ai/igm, "a")
+    	encryptedText = encryptedText.replace(/ufat/igm, "u")
+ 	document.getElementById("img-section-codificada").style.display = "none"
+    document.querySelector(".segundo-paragrafo").style.display = "none"
+    document.querySelector(".primeiro-paragrafo").innerHTML = encryptedText
+}
+	function copyToClickBoard() {
+  		let text = document.getElementById('input-deposito')
+    	let content = document.querySelector('.primeiro-paragrafo').innerHTML;
+
+    navigator.clipboard.writeText(content)
+    alert("Copiado!")
+
+    text.value = ""
+}
+		let buttonRefresh = document.querySelector(".button-section-codificada-reiniciar");
+	buttonRefresh.addEventListener("click", function () {
+
+    location.reload();
+});
+
+</script>
+	<img src="midia/Vector (1).png" class="img-icone2">
+	<p class="mensagem-musica" align="justify">Equanto você se diverte, da play pra ouvir uma musica maneira!</p>
+	<audio class="musica" src="midia/Enough - NEFFEX.mp3" controls autoplay></audio>
+		<footer>
+			<p class="copyright">&copy; Copyright Vitor de Oliveira - Dev.front-end</p>
+		</footer>
+</body>
+</html>
+
